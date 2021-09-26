@@ -13,11 +13,12 @@ body {
 a {
     text-decoration: none;
 }
-button:focus,
-button:visited{
+
+button:focus, button:visited {
     border: none;
     outline: none;
 }
+
 a:hover {
     color: inherit;
 }
@@ -432,9 +433,11 @@ a:hover {
     border-bottom-left-radius: 16px;
     height: fit-content;
 }
-.compare-panel:hover{
+
+.compare-panel:hover {
     background-color: #264c97;
 }
+
 .compare-btn {
     display: inline-flex;
     width: .85rem;
@@ -481,8 +484,7 @@ a:hover {
     font-weight: 500;
 }
 
-.jBox-Mouse .jBox-container,
-.jBox-Tooltip .jBox-container {
+.jBox-Mouse .jBox-container, .jBox-Tooltip .jBox-container {
     border: 1px solid #ced4da;
     box-shadow: 0 0.5em 1.5em rgb(0 0 0 / 10%), 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
@@ -495,9 +497,11 @@ a:hover {
 .jBox-content .modal-content {
     border: none;
 }
-.landing-page-section{
+
+.landing-page-section {
     padding: 30px 0;
 }
+
 .landing-page-text {
     color: #3d3d3d;
     font-family: "Merriweather", serif;
@@ -506,6 +510,7 @@ a:hover {
     margin: 40px 0 30px;
     letter-spacing: 2px;
 }
+
 .landing-page-banner {
     background: url('../../assets/images/banner-bg.png');
     background-size: cover;
@@ -514,11 +519,13 @@ a:hover {
     border-radius: 40px;
     height: 27rem;
 }
+
 .banner-input-box {
     position: relative;
     margin-top: 1rem;
     display: inline-block;
 }
+
 .banner-input-box input {
     outline: none;
     border: none;
@@ -527,6 +534,7 @@ a:hover {
     min-width: 500px;
     border: 2px solid #3d3d3d;
 }
+
 .banner-input-box button {
     position: absolute;
     background: #f05454;
@@ -538,28 +546,49 @@ a:hover {
     right: 5px;
     top: 5px;
 }
+
 /* ============ desktop view ============ */
-@media (max-width: 575px){
-    .landing-page-banner{
+
+@media (max-width: 575px) {
+    .landing-page-text {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 3rem;
+        margin: 30px 0;
+    }
+    .banner-input-box, .banner-input-box input {
+        min-width: 100%;
+        margin-top: 1.5rem;
+    }
+    .banner-input-box button {
+        top: 1.95rem;
+    }
+    .landing-page-banner p {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    .landing-page-banner {
         padding: 1rem;
         border-radius: 0.35rem;
     }
-    .choose-compare-section .landing-page{
+    .choose-compare-section .landing-page {
         font-size: 1.7rem;
     }
     .slick-dotted.slick-slider {
         width: calc(100% - 3rem);
         margin: auto;
     }
-    .footer-section-new{
+    .footer-section-new {
         display: none;
     }
 }
+
 @media (min-width: 576px) {
-    .request-btn{
+    .request-btn {
         background-color: red;
     }
 }
+
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-toggler {
         display: block;
@@ -570,8 +599,8 @@ a:hover {
     .collapse.show {
         display: block!important;
     }
-    
 }
+
 @media (min-width: 992px) {
     .navbar-expand-md .navbar-toggler {
         display: none;
@@ -580,6 +609,7 @@ a:hover {
         display: flex!important;
     }
 }
+
 @media (min-width: 1200px) {}
 
 @media all and (min-width: 992px) {
