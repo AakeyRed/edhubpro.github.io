@@ -7,12 +7,17 @@
 body {
     padding-top: 5rem;
     background-color: #eeeeee;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
 }
-
+button:focus,
+button:visited{
+    border: none;
+    outline: none;
+}
 a:hover {
     color: inherit;
 }
@@ -419,21 +424,20 @@ a:hover {
     z-index: 999;
     top: 0;
     bottom: 0;
-    right: -3%;
-    padding: .5rem 1rem 1.5rem;
+    right: 0;
+    padding: 1.2rem .75rem 1rem;
     margin: auto;
-    background: #3c64b1;
+    background-color: #3c64b1;
     border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
     height: fit-content;
-    transform: rotate(270deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
 }
-
+.compare-panel:hover{
+    background-color: #264c97;
+}
 .compare-btn {
-    color: #fff;
+    display: inline-flex;
+    width: .85rem;
 }
 
 .request-btn {
@@ -494,6 +498,14 @@ a:hover {
 .landing-page-section{
     padding: 30px 0;
 }
+.landing-page-text {
+    color: #3d3d3d;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 40px 0 30px;
+    letter-spacing: 2px;
+}
 .landing-page-banner {
     background: url('../../assets/images/banner-bg.png');
     background-size: cover;
@@ -527,6 +539,48 @@ a:hover {
     top: 5px;
 }
 /* ============ desktop view ============ */
+@media (max-width: 575px){
+    .landing-page-banner{
+        padding: 1rem;
+        border-radius: 0.35rem;
+    }
+    .choose-compare-section .landing-page{
+        font-size: 1.7rem;
+    }
+    .slick-dotted.slick-slider {
+        width: calc(100% - 3rem);
+        margin: auto;
+    }
+    .footer-section-new{
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    .request-btn{
+        background-color: red;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+    .collapse:not(.show) {
+        display: none!important;
+    }
+    .collapse.show {
+        display: block!important;
+    }
+    
+}
+@media (min-width: 992px) {
+    .navbar-expand-md .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: flex!important;
+    }
+}
+@media (min-width: 1200px) {}
 
 @media all and (min-width: 992px) {
     /* .dropdown-menu li {
