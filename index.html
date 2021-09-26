@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Edhub</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="stylesheet" href="./vender/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vender/css/jBox.all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/slick/slick-theme.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./custom/css/style.css" />
+
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md bg-light ed-navbar fixed-top">
+            <!-- if dev wants to fixed top header add "fixed-top" class with navbar -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="./assets/images/edhub.png" alt="Eduhub">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav nav-pills px-3">
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Courses</button>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="javascript:void(0);"> Dropdown item 1 </a></li>
+                                <li> <a class="dropdown-item" href="javascript:void(0);"> Dropdown item 2 &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Submenu item 1</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Submenu item 2</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Submenu item 3 &raquo;
+                                            </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Multi level
+                                                        1</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Multi level
+                                                        2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Submenu item 4 &raquo;
+                                            </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Multi level
+                                                        3</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Multi level
+                                                        4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Submenu item 5</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0);">Submenu item 6</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:void(0);"> Dropdown item 3 </a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0);"> Dropdown item 4 </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <form class="d-flex flex-column header-search-from px-3">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <div id="searchResult" class="search-result-list" style="display: none;">
+                                <div class="list-group">
+                                    <a href="javascript:void(0);" class="list-group-item">The current link item</a>
+                                    <a href="javascript:void(0);" class="list-group-item">A second link item</a>
+                                    <a href="javascript:void(0);" class="list-group-item">A third link item</a>
+                                    <a href="javascript:void(0);" class="list-group-item">A fourth link item</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-dark">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Govt.
+                                Jobs</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="/govermentjobs">Govt Jobs</a></li>
+                                <li><a class="dropdown-item" href="/questionpaper">Question Paper</a></li>
+                                <li><a class="dropdown-item" href="/exam/calendar">Exam Calendar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link link-dark">Guide Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link link-dark">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);">
+                                <img width="42px" class="img-fluid" src="./assets/images/bookmark.png" alt="bookmark">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target=".login-popup">Login</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="landing-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="landing-page-banner">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8 col-lg-6">
+                                <h1 class="fs-1 fw-bold mb-4 mt-5">Learn. <br>From The World's Best.</h1>
+                                <p class="fs-5 fw-normal">What do you like to learn?</p>
+                                <div class="banner-input-box">
+                                    <form>
+                                        <input type="text" name="" id="" placeholder="Search your course....">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose-compare-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="landing-page">Edhub helps you choose &amp; compare the best course
+                        from global Ed-tech leaders like Udemy, Coursera, Skillshare, Linkedin Learning &amp; many more.
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg">
+                    <div class="feature">
+                        <div class="feature-anim-icon">
+                            <div class="feature-icon">
+                                <img src="./assets/images/icon1.png" class="card-img-top" alt="Browe Icon">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <h5 class="card-title">BROWSE</h5>
+                            <p class="card-text">Search from the world's best courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <img src="./assets/images/Arrow1.png" class="card-img-top" alt="Arrow">
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg">
+                    <div class="feature">
+                        <div class="feature-anim-icon">
+                            <div class="feature-icon">
+                                <img src="./assets/images/icon2.png" class="card-img-top" alt="Analyze & Compare Icon">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <h5 class="card-title">ANALYZE AND COMPARE</h5>
+                            <p class="card-text">Find your Perfect course among thousands of others</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-none d-lg-block">
+                    <img src="./assets/images/Arrow2.png" class="card-img-top" alt="Arrow">
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg">
+                    <div class="feature">
+                        <div class="feature-anim-icon">
+                            <div class="feature-icon">
+                                <img src="./assets/images/icon3.png" class="card-img-top" alt="Up Skill Icon">
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <h5 class="card-title">UPSKILL</h5>
+                            <p class="card-text">Get certified & Reward your brain with an extra skill</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-choice-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="landing-page">Business</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="fs-5">Learn top-rated courses like Entrepreneurship, Project Management,
+                        Business analytics &amp; Intelligence from experts.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <button type="button" class="btn btn-ed-lg btn-primary-theme ms-lg-auto">View All</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="course-slider">
+                        <div class="mb-3">
+                            <div class="card ed-card tooltip" title="">
+                                <button class="wishlist-section">
+                                    <img src="./assets/images/bookmark.png" alt="bookmark">
+                                </button>
+                                <div class="card-body">
+                                    <div class="course-banner">
+                                        <img class="img-fluid"
+                                            src="https://img-c.udemycdn.com/course/480x270/3847440_86ae.jpg"
+                                            alt="Book Paid Speaking Engagements in 2021" />
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img class="course-provider-logo"
+                                                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+                                                alt="course-provider">
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="course-price">$ 19.99</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col">
+                                            <a href="javascript:void(0);">
+                                                <h4 class="ed-card-title">Book Paid Speaking Engagements in 2021</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-start">
+                                                    <img src="./assets/images/play.png" alt="play">
+                                                    <p class="ellipsis-text">20 Lessons</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="./assets/images/guide.png" alt="guide">
+                                                    <p class="ellipsis-text">Guided Course</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col">
+                                            <div class="compare-section">
+                                                <img src="./assets/images/addcompare.png" alt="addcompare">
+                                                <h5>Add to compare</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                            <div class="coursecard-footer">
+                                                <img src="./assets/images/star0.png" alt="Star">
+                                                <p class="review-text">
+                                                    <b>0 &nbsp; Reviews</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="d-flex justify-content-end" href="javascript:void(0);">
+                                                <img src="./assets/images/reviewArrow.png" alt="reviewArrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="card ed-card tooltip" title="">
+                                <button class="wishlist-section">
+                                    <img src="./assets/images/bookmark.png" alt="bookmark">
+                                </button>
+                                <div class="card-body">
+                                    <div class="course-banner">
+                                        <img class="img-fluid"
+                                            src="https://img-c.udemycdn.com/course/480x270/3847440_86ae.jpg"
+                                            alt="Book Paid Speaking Engagements in 2021" />
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img class="course-provider-logo"
+                                                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+                                                alt="course-provider">
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="course-price">$ 19.99</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col">
+                                            <a href="javascript:void(0);">
+                                                <h4 class="ed-card-title">Book Paid Speaking Engagements in 2021</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-start">
+                                                    <img src="./assets/images/play.png" alt="play">
+                                                    <p class="ellipsis-text">20 Lessons</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="./assets/images/guide.png" alt="guide">
+                                                    <p class="ellipsis-text">Guided Course</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col">
+                                            <div class="compare-section">
+                                                <img src="./assets/images/addcompare.png" alt="addcompare">
+                                                <h5>Add to compare</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                            <div class="coursecard-footer">
+                                                <img src="./assets/images/star0.png" alt="Star">
+                                                <p class="review-text">
+                                                    <b>0 &nbsp; Reviews</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="d-flex justify-content-end" href="javascript:void(0);">
+                                                <img src="./assets/images/reviewArrow.png" alt="reviewArrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="card ed-card tooltip" title="">
+                                <button class="wishlist-section">
+                                    <img src="./assets/images/bookmark.png" alt="bookmark">
+                                </button>
+                                <div class="card-body">
+                                    <div class="course-banner">
+                                        <img class="img-fluid"
+                                            src="https://img-c.udemycdn.com/course/480x270/3847440_86ae.jpg"
+                                            alt="Book Paid Speaking Engagements in 2021" />
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img class="course-provider-logo"
+                                                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+                                                alt="course-provider">
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="course-price">$ 19.99</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col">
+                                            <a href="javascript:void(0);">
+                                                <h4 class="ed-card-title">Book Paid Speaking Engagements in 2021</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-start">
+                                                    <img src="./assets/images/play.png" alt="play">
+                                                    <p class="ellipsis-text">20 Lessons</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="./assets/images/guide.png" alt="guide">
+                                                    <p class="ellipsis-text">Guided Course</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col">
+                                            <div class="compare-section">
+                                                <img src="./assets/images/addcompare.png" alt="addcompare">
+                                                <h5>Add to compare</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                            <div class="coursecard-footer">
+                                                <img src="./assets/images/star0.png" alt="Star">
+                                                <p class="review-text">
+                                                    <b>0 &nbsp; Reviews</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="d-flex justify-content-end" href="javascript:void(0);">
+                                                <img src="./assets/images/reviewArrow.png" alt="reviewArrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="card ed-card tooltip" title="">
+                                <button class="wishlist-section">
+                                    <img src="./assets/images/bookmark.png" alt="bookmark">
+                                </button>
+                                <div class="card-body">
+                                    <div class="course-banner">
+                                        <img class="img-fluid"
+                                            src="https://img-c.udemycdn.com/course/480x270/3847440_86ae.jpg"
+                                            alt="Book Paid Speaking Engagements in 2021" />
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img class="course-provider-logo"
+                                                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+                                                alt="course-provider">
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="course-price">$ 19.99</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col">
+                                            <a href="javascript:void(0);">
+                                                <h4 class="ed-card-title">Book Paid Speaking Engagements in 2021</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-start">
+                                                    <img src="./assets/images/play.png" alt="play">
+                                                    <p class="ellipsis-text">20 Lessons</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="./assets/images/guide.png" alt="guide">
+                                                    <p class="ellipsis-text">Guided Course</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col">
+                                            <div class="compare-section">
+                                                <img src="./assets/images/addcompare.png" alt="addcompare">
+                                                <h5>Add to compare</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                            <div class="coursecard-footer">
+                                                <img src="./assets/images/star0.png" alt="Star">
+                                                <p class="review-text">
+                                                    <b>0 &nbsp; Reviews</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="d-flex justify-content-end" href="javascript:void(0);">
+                                                <img src="./assets/images/reviewArrow.png" alt="reviewArrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="card ed-card tooltip" title="">
+                                <button class="wishlist-section">
+                                    <img src="./assets/images/bookmark.png" alt="bookmark">
+                                </button>
+                                <div class="card-body">
+                                    <div class="course-banner">
+                                        <img class="img-fluid"
+                                            src="https://img-c.udemycdn.com/course/480x270/3847440_86ae.jpg"
+                                            alt="Book Paid Speaking Engagements in 2021" />
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img class="course-provider-logo"
+                                                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+                                                alt="course-provider">
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="course-price">$ 19.99</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col">
+                                            <a href="javascript:void(0);">
+                                                <h4 class="ed-card-title">Book Paid Speaking Engagements in 2021</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-start">
+                                                    <img src="./assets/images/play.png" alt="play">
+                                                    <p class="ellipsis-text">20 Lessons</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="./assets/images/guide.png" alt="guide">
+                                                    <p class="ellipsis-text">Guided Course</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col">
+                                            <div class="compare-section">
+                                                <img src="./assets/images/addcompare.png" alt="addcompare">
+                                                <h5>Add to compare</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                            <div class="coursecard-footer">
+                                                <img src="./assets/images/star0.png" alt="Star">
+                                                <p class="review-text">
+                                                    <b>0 &nbsp; Reviews</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="d-flex justify-content-end" href="javascript:void(0);">
+                                                <img src="./assets/images/reviewArrow.png" alt="reviewArrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="card ed-card tooltip">
+                                <button class="wishlist-section">
+                                    <img src="./assets/images/bookmark.png" alt="bookmark">
+                                </button>
+                                <div class="card-body">
+                                    <div class="course-banner">
+                                        <img class="img-fluid"
+                                            src="https://img-c.udemycdn.com/course/480x270/3847440_86ae.jpg"
+                                            alt="Book Paid Speaking Engagements in 2021" />
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <img class="course-provider-logo"
+                                                src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+                                                alt="course-provider">
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="course-price">$ 19.99</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col">
+                                            <a href="javascript:void(0);">
+                                                <h4 class="ed-card-title course-title">Book Paid Speaking Engagements in
+                                                    2021</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-start">
+                                                    <img src="./assets/images/play.png" alt="play">
+                                                    <p class="ellipsis-text">20 Lessons</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card-overview">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="./assets/images/guide.png" alt="guide">
+                                                    <p class="ellipsis-text">Guided Course</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col">
+                                            <div class="compare-section">
+                                                <img src="./assets/images/addcompare.png" alt="addcompare">
+                                                <h5>Add to compare</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                            <div class="coursecard-footer">
+                                                <img src="./assets/images/star0.png" alt="Star">
+                                                <p class="review-text">
+                                                    <b>0 &nbsp; Reviews</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="d-flex justify-content-end" href="javascript:void(0);">
+                                                <img src="./assets/images/reviewArrow.png" alt="reviewArrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="community-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="community-divison">
+                        <p class="community-heading">
+                            <span class="community-global-icon">
+                                <img class="img-fluid" src="./assets/images/circle icon.png"
+                                    alt="Community Global Icon" />
+                            </span>
+                            <span class="theme-color-text">Join the Community</span>
+                        </p>
+                        <p class="community-heading">
+                            of more than <span class="theme-color-text">125000</span>+ Online Courses
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="community-divison">
+                        <p class="community-caption">We collaborate with 200+ leading universities and companies</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="brand-section">
+                        <div class="card">
+                            <img src="./assets/images/google.png" alt="" class="brand-image">
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/ibm.png" alt="" class="brand-image">
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/duke.png" alt="" class="brand-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="feature-in-header">Featured In</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-fluid" src="./assets/images/hindustan.png" alt="hindustan">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-fluid" src="./assets/images/toi.png" alt="hindustan">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-fluid" src="./assets/images/hd.png" alt="hindustan">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-fluid" src="./assets/images/guardian.png" alt="hindustan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section-new">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-header-content"><b>Discover various online courses from top
+                            universities,<br>providers, and institutions</b></div>
+                </div>
+            </div>
+            <div class="row footer-section-row">
+                <div class="footer-section-column col-12 col-md-4 col-lg-6">
+                    <div class="column-headings"><b> ~100+ Universities</b></div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class=" footer-section-one"><img src="./assets/images/harvard.png" alt="harvard"
+                                    class="footer-icons">
+                                <p class="footer-header-name ml-2 mb-0">Harvard university &amp; Other top universities
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section-column footer-col-2 col-12 col-md-4 col-lg-3">
+                    <div class="column-headings"><b>50+ Providers</b></div>
+                    <div class=" footer-section-one"><img src="./assets/images/Vector.png" alt="Vector">
+                        <p class="provider-name ml-2 mb-0">Coursera</p>
+                    </div>
+                    <div class=" footer-section-one"><img src="./assets/images/udemy-icon 1.png" alt="Udemy"
+                            class="footer-icons">
+                        <p class="provider-name ml-2 mb-0">Udemy</p>
+                    </div>
+                </div>
+                <div class="footer-section-column col-12 col-md-4 col-lg-3">
+                    <div class="column-headings"><b>40+ Institutions</b></div>
+                    <div class=" footer-section-one"><img src="./assets/images/microsoft-icon 1.png" alt="microsoft"
+                            class="footer-icons">
+                        <p class="footer-header-name ml-2 mb-0">Microsoft</p>
+                    </div>
+                    <div class=" footer-section-one"><img src="./assets/images/amazon-icon 1.png" alt="Amazon"
+                            class="footer-icons">
+                        <p class="footer-header-name ml-2 mb-0">Amazon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-course-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <h2 class="footer-course-header">Sign up to our Newsletter</h2>
+                    <p class="footer-course-paragraph">Free Ebooks - Free courses - Free Articles</p>
+                    <div class=" footer-course-row row">
+                        <div class="col-sm-12 col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <input name="email" id="exampleEmail" placeholder="someone@gmail.com" type="email"
+                                        class="footer-course-email-input form-control">
+                                    <button type="submit" value="submit"
+                                        class="footer-course-btn btn btn-secondary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="compare-panel">
+        <a class="compare-btn" href="/compare">COMPARE</a>
+    </div>
+    <div class="request-btn" data-bs-toggle="modal" data-bs-target=".request-popup">
+        <img src="./assets/images/phone.png" alt="Phone icon">
+    </div>
+
+    <div class="modal fade request-popup" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-5 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h5 class="modal-title">Modal title</h5> -->
+                    <h2 class="fw-bold mb-0">Request a call back</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-5 pt-0">
+                    <p>Let us help you guide towards your career path</p>
+                    <form class="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control rounded-4" id="userName" placeholder="Name">
+                            <label for="userName">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control rounded-4" id="userMobileNumber"
+                                placeholder="Mobile Number">
+                            <label for="userMobileNumber">Mobile Number</label>
+                        </div>
+                        <ul>
+                            <li class="py-2">Non-biased career guidance</li>
+                            <li class="py-2">Counselling based on your skills and preference</li>
+                            <li class="py-2">No repetitive calls, only as per convenience</li>
+                        </ul>
+                        <p><b>We will give you a call between 9 AM to 9 PM.</b></p>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary-theme" type="submit">Request a call
+                            back</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade login-popup" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-5 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h5 class="modal-title">Modal title</h5> -->
+                    <h2 class="fw-bold mb-0">Welcome to <span class="theme-color-text">EdHub</span></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-5 pt-0">
+                    <h3>Login</h3>
+                    <form class="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-4" id="userEmail"
+                                placeholder="name@example.com">
+                            <label for="userName">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-4" id="userPassword"
+                                placeholder="Password">
+                            <label for="userPassword">Password</label>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember Me</label>
+                            </div>
+                            <div class="fp-btn">
+                                <a href="javascript:void(0);" class="forgot-password-btn">Forgot Password</a>
+                            </div>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary-theme" type="submit">Submit</button>
+                        <p class="text-center">Don't have an account?
+                            <b>
+                                <a class="theme-color-text" href="javascript:void(0);">Get Started</a>
+                            </b>
+                        </p>
+                        <hr />
+                        <p class="text-center">Login With Your Social Account</p>
+                        <a href="javascript:void(0);" class="w-50 d-flex mx-auto" type="submit">
+                            <img class="img-fluid" src="./assets/images/signInGoogle.png" alt="signInGoogle">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vender/js/jquery-3.6.0.min.js"></script>
+    <script src="./vender/js/bootstrap.bundle.min.js"></script>
+    <script src="./vender/js/jBox.all.min.js"></script>
+    <script type="text/javascript" src="./vender/slick/slick.min.js"></script>
+    <script src="./custom/js/script.js"></script>
+</body>
+
+</html>
