@@ -79,12 +79,12 @@ new jBox('Tooltip', {
                     <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0">View Details</button>
                 </div>
             </div>`,
-    adjustPosition: true,
-    position: {
-        x: 'left',
-        y: 'center'
-      },
-    outside: 'x',
+    // adjustPosition: true,
+    // position: {
+    //     x: 'left',
+    //     y: 'center'
+    //   },
+    outside: 'y',
     onOpen: function () {
         console.log(this.target.find("ed-card"))
         // this.source.data('clicked', (this.source.data('clicked') || 0) + 1);
