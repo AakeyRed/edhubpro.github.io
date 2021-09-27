@@ -838,6 +838,10 @@ a:hover {
     .dropdown-menu>li:hover>.submenu {
         display: block;
     }
+    .dropdown-item{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 1200px) {}
