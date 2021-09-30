@@ -828,7 +828,10 @@ img[alt=Arrow] {
 .filter-panel {
     border-radius: .75rem;
     overflow: hidden;
+    position: sticky;
+    top: 5.5rem;
 }
+.filter-panel .card-body{}
 
 .filter-header {
     background-color: #fff;
