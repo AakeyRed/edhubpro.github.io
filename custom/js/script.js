@@ -64,13 +64,7 @@ $(document).ready(function () {
     });
 });
 
-$(".main-menu-dd-item").on("mouseover", function(){
-    let mainDdHeight = $(".cousre-dd-main-menu").outerHeight();
-    $(".cousre-dd-sub-menu").css("min-height",mainDdHeight);
-});
-
-$(".sub-menu-dd-item").on("mouseover", function(){
-    let subDdHeight = $(".cousre-dd-sub-menu").outerHeight();
-    $(".cousre-dd-sub-child-menu").css("min-height",subDdHeight);
-});
-
+document.getElementById("pricingRange").oninput = function () {
+    var value = (this.value - this.min) / (this.max - this.min) * 100
+    this.style.background = 'linear-gradient(to right, #f05454 0%, #f05454 ' + value + '%, #b5b5b5 ' + value + '%, #b5b5b5 100%)'
+};
